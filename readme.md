@@ -6,7 +6,7 @@ wod is a node.js module to generate a CrossFit Workout Of the Day (WOD)
 Keynote
 -------
 
-Get a random WOD from 17 WODs categories:
+Get a random WOD from 16 WODs categories:
 
 * 	Weightlifting
 *   Endurance
@@ -42,12 +42,12 @@ Usage
 Methods
 -------
 
-	wod.random([what], callback);
+	wod.random([categories], callback);
 	wod.getone(callback);
 
 With 
 
-* `what`, optional, array containing list of WODs categories
+* `categories`, optional, array containing list of WODs categories
 * `callback` with error return or succes message.
 
  
