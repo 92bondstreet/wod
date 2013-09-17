@@ -22,7 +22,7 @@
  			describe('with no arguments', function() {
 		        it('throw ERROR', function() {
 		          (function () {
-		          	var workout = wod.random();		            
+		          	wod.random();		            
 		          }).should.throw();  
 		        });
 		    });
@@ -30,13 +30,13 @@
 		    describe('More than 2 arguments', function() {
 		        it('throw ERROR', function() {
 		          (function () {
-		           var workout = wod.random("","","");		
+		           wod.random("","","");		
 		          }).should.throw();
 		        });
 
 		         it('throw ERROR', function() {
 		          (function () {
-		           var workout = wod.random("","","","");		
+		           wod.random("","","","");		
 		          }).should.throw();
 		        });
 		    });
@@ -44,7 +44,7 @@
 		    describe('With 2 invalids arguments', function() {
 		        it('throw ERROR', function() {
 		          (function () {
-		            var workout = wod.random("","");		
+		             wod.random("","");		
 		          }).should.throw();
 		        });
 		    });
@@ -54,15 +54,22 @@
           			wod.random(traceError).should.be.true;
         		});
 
-		         it('return a random WOD from all categories', function() { 
+		         it('return a random WOD from all categories', function(done) { 
+		         	//this.timeout(50000);               			
 		         	var wod_categories = 16;
-		         	var workouts = wod.random(traceError);                			
-          			workouts.length.should.have.length(wod_categories);
-          			for(var i=0;i<workouts.length;i++){
-          				workouts[i].should.have.property('title');	
-          				workouts[i].should.have.property('tagline');	
-          				workouts[i].should.have.property('exercices');	
-          			}
+		        	wod.random(function(err,workouts){
+             			if (err) 
+             				console.log(err);
+             			else{
+             				workouts.should.have.length(wod_categories);
+		          			for(var i=0;i<workouts.length;i++){
+		          				workouts[i].should.have.property('title');	
+		          				workouts[i].should.have.property('tagline');	
+		          				workouts[i].should.have.property('exercices');	
+		          			}
+             			}
+            			done();
+          			});
         		});
 		    });
 
@@ -71,19 +78,23 @@
           			wod.random(categories,traceError).should.be.true;
         		});
 
-        		it('return WODs according input categories', function() {                  			
-          			var workouts = wod.random(categories,traceError);
-          			workouts.length.should.have.length(categories.length);
-          			for(var i=0;i<workouts.length;i++){
-          				workouts[i].should.have.property('title');	
-          				workouts[i].should.have.property('tagline');	
-          				workouts[i].should.have.property('exercices');	
-          			}
+        		it('return WODs according input categories', function(done) {   
+        			//this.timeout(50000);               			
+        			wod.random(categories,function(err,workouts){
+             			if (err) 
+             				console.log(err);
+             			else{
+             				workouts.should.have.length(categories.length);
+		          			for(var i=0;i<workouts.length;i++){
+		          				workouts[i].should.have.property('title');	
+		          				workouts[i].should.have.property('tagline');	
+		          				workouts[i].should.have.property('exercices');	
+		          			}
+             			}
+            			done();
+          			});
         		});
 		    });
-
-
-
  		});
 
 	}

@@ -18,7 +18,8 @@
   ],
   "analyze": false,
   "dependencies": {
-    "needle": "*"
+    "needle": "*",
+    "async": "*"
   },
   "devDependencies": {
    	"mocha": "*",
