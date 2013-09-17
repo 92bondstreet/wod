@@ -142,5 +142,14 @@
 			"wodType":"strongman",
 			"submit":"Strongman"
 		}
+	},
+	"the-hopper":
+	{
+		"title":"The Hopper",
+		"tagline":"All workouts",
+		"post":{
+			"wodType":"modal",
+			"submit":"The Hopper"
+		}
 	}
 }

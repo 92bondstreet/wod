@@ -17,7 +17,11 @@
  		*    DEFINITION OF OBJECT PARAMETER
  		*/
  		var categories = ['weightlifting','bodyweight','emotm'];
+ 		var category = 'girls';
 
+ 	   /*
+ 		* 		Random method calling
+ 		*/
  		describe('random', function() {
  			describe('with no arguments', function() {
 		        it('throw ERROR', function() {
@@ -50,13 +54,13 @@
 		    });
 
 		    describe('With 1 valids arguments', function() {
-		         it('return OK if args are correct', function() {                  			
-          			wod.random(traceError).should.be.true;
-        		});
+		        //it('return OK if args are correct', function() {                  			
+          		//	wod.random(traceError).should.be.true;
+        		//});
 
 		         it('return a random WOD from all categories', function(done) { 
 		         	this.timeout(50000);               			
-		         	var wod_categories = 16;
+		         	var wod_categories = 17;
 		        	wod.random(function(err,workouts){
              			if (err) 
              				console.log(err);
@@ -96,6 +100,65 @@
         		});
 		    });
  		});
+
+
+	   /*
+ 		* 		getone method calling
+ 		*/
+
+ 		describe('getone', function() {
+ 			describe('with no arguments', function() {
+		        it('throw ERROR', function() {
+		          (function () {
+		          	wod.getone();		            
+		          }).should.throw();  
+		        });
+		    });
+
+		    describe('More than 1 arguments', function() {
+		        it('throw ERROR', function() {
+		          (function () {
+		           wod.getone("","","");		
+		          }).should.throw();
+		        });
+
+		         it('throw ERROR', function() {
+		          (function () {
+		           wod.getone("","","","");		
+		          }).should.throw();
+		        });
+		    });
+
+		    describe('With 1 invalids arguments', function() {
+		        it('throw ERROR', function() {
+		          (function () {
+		             wod.getone("");		
+		          }).should.throw();
+		        });
+		    });
+		    
+			describe('With 1 valids arguments', function() {
+		        it('return OK if args are correct', function() {                  			
+          			wod.getone(traceError).should.be.true;
+        		});
+
+        		it('return random WOD', function(done) {   
+        			this.timeout(50000);               			
+        			wod.getone(function(err,workouts){
+             			if (err) 
+             				console.log(err);
+             			else{
+             				var workout = workouts[0];
+	          				workout.should.have.property('title');	
+	          				workout.should.have.property('tagline');	
+	          				workout.should.have.property('exercices');	
+             			}
+            			done();
+          			});
+        		});
+		    });
+ 		});
+		
 
 	}
 )();
