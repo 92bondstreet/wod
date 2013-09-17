@@ -55,7 +55,7 @@
         		});
 
 		         it('return a random WOD from all categories', function(done) { 
-		         	//this.timeout(50000);               			
+		         	this.timeout(50000);               			
 		         	var wod_categories = 16;
 		        	wod.random(function(err,workouts){
              			if (err) 
@@ -73,7 +73,7 @@
         		});
 		    });
 
-			describe('With 2 valids arguments', function() {
+			/*describe('With 2 valids arguments', function() {
 		        it('return OK if args are correct', function() {                  			
           			wod.random(categories,traceError).should.be.true;
         		});
@@ -94,7 +94,7 @@
             			done();
           			});
         		});
-		    });
+		    });*/
  		});
 
 	}

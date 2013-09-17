@@ -19,7 +19,8 @@
   "analyze": false,
   "dependencies": {
     "needle": "*",
-    "async": "*"
+    "async": "*",
+    "random-ua": "*"
   },
   "devDependencies": {
    	"mocha": "*",
