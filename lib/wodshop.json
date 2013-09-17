@@ -16,6 +16,131 @@
 			"wodType":"metcon",
 			"submit":"Endurance"
 		}
+	},
+	"bodyweight":
+	{
+		"title":"Bodyweight",
+		"tagline":"Bodyweight only workouts (some may require pull-up bar, jump rope, rings, and/or plyo box)",
+		"post":{
+			"wodType":"bodywt",
+			"submit":"Bodyweight"
+		}
+	},
+	"kettlebells":
+	{
+		"title":"Kettlebells",
+		"tagline":"Workouts involving one or more kettlebell exercises",
+		"post":{
+			"wodType":"kb",
+			"submit":"Kettlebells"
+		}
+	},
+	"singlets":
+	{
+		"title":"Singlets",
+		"tagline":"Single element workouts - weightlifting (W), endurance (M), or bodyweight (B)",
+		"post":{
+			"wodType":"singlet",
+			"submit":"Singlets"
+		}
+	},
+	"couplets":
+	{
+		"title":"Couplets",
+		"tagline":"Two element workouts - WM, BM, WW, WB, etc...",
+		"post":{
+			"wodType":"couplet",
+			"submit":"Couplets"
+		}
+	},
+	"triplet":
+	{
+		"title":"Triplets",
+		"tagline":"Three element workouts - BWM, WBM, WWB, BBB, etc...",
+		"post":{
+			"wodType":"triplet",
+			"submit":"Triplets"
+		}
+	},
+	"hybrids":
+	{
+		"title":"Hybrids",
+		"tagline":"Mixed-modal workouts, four or more exercises performed for multiple rounds",
+		"post":{
+			"wodType":"hybrid",
+			"submit":"Hybrids"
+		}
+	},
+	"chipper":
+	{
+		"title":"Chippers",
+		"tagline":"Multiple exercises in single round format",
+		"post":{
+			"wodType":"chipper",
+			"submit":"Chippers"
+		}
+	},
+	"C2":
+	{
+		"title":"C2",
+		"tagline":"Indoor rowing workouts",
+		"post":{
+			"wodType":"c2",
+			"submit":"C2"
+		}
+	},
+	"AMRAP":
+	{
+		"title":"AMRAP",
+		"tagline":"Work priority WODs - As Many Rounds As Possible",
+		"post":{
+			"wodType":"amrap",
+			"submit":"AMRAP"
+		}
+	},
+	"Hero":
+	{
+		"title":"Hero",
+		"tagline":"Main site WODs named in honor of fallen Mil/LEO",
+		"post":{
+			"wodType":"hero",
+			"submit":"Hero"
+		}
+	},
+	"Girls":
+	{
+		"title":"Girls",
+		"tagline":"CFHQ's original named benchmark WODs",
+		"post":{
+			"wodType":"girls",
+			"submit":"Girls"
+		}
+	},
+	"strength-bias":
+	{
+		"title":"Strength Bias",
+		"tagline":"Short duration heavy metcons consistent with CFSB programming",
+		"post":{
+			"wodType":"cfsb",
+			"submit":"Strength Bias"
+		}
+	},
+	"emotm":
+	{
+		"title":"EMOTM",
+		"tagline":"Every Minute On The Minute WODs (including Death By WOD)",
+		"post":{
+			"wodType":"emom",
+			"submit":"EMOTM"
+		}
+	},
+	"strongman":
+	{
+		"title":"Strongman",
+		"tagline":"Workouts involving a variety of Strongman implements and movements. Scale accordingly!",
+		"post":{
+			"wodType":"strongman",
+			"submit":"Strongman"
+		}
 	}
-
 }
