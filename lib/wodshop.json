@@ -80,7 +80,7 @@
 			"submit":"Chippers"
 		}
 	},
-	"C2":
+	"c2":
 	{
 		"title":"C2",
 		"tagline":"Indoor rowing workouts",
@@ -89,7 +89,7 @@
 			"submit":"C2"
 		}
 	},
-	"AMRAP":
+	"amrap":
 	{
 		"title":"AMRAP",
 		"tagline":"Work priority WODs - As Many Rounds As Possible",
@@ -98,7 +98,7 @@
 			"submit":"AMRAP"
 		}
 	},
-	"Hero":
+	"hero":
 	{
 		"title":"Hero",
 		"tagline":"Main site WODs named in honor of fallen Mil/LEO",
@@ -107,7 +107,7 @@
 			"submit":"Hero"
 		}
 	},
-	"Girls":
+	"girls":
 	{
 		"title":"Girls",
 		"tagline":"CFHQ's original named benchmark WODs",

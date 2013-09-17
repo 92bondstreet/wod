@@ -20,7 +20,8 @@
   "dependencies": {
     "needle": "*",
     "async": "*",
-    "random-ua": "*"
+    "random-ua": "*",
+    "cheerio": "*"
   },
   "devDependencies": {
    	"mocha": "*",

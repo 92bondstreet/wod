@@ -16,7 +16,7 @@
 	  /**
  		*    DEFINITION OF OBJECT PARAMETER
  		*/
- 		var categories = ['weighlifting','bodyweight','emotm'];
+ 		var categories = ['weightlifting','bodyweight','emotm'];
 
  		describe('random', function() {
  			describe('with no arguments', function() {
@@ -73,13 +73,13 @@
         		});
 		    });
 
-			/*describe('With 2 valids arguments', function() {
+			describe('With 2 valids arguments', function() {
 		        it('return OK if args are correct', function() {                  			
           			wod.random(categories,traceError).should.be.true;
         		});
 
         		it('return WODs according input categories', function(done) {   
-        			//this.timeout(50000);               			
+        			this.timeout(50000);               			
         			wod.random(categories,function(err,workouts){
              			if (err) 
              				console.log(err);
@@ -94,7 +94,7 @@
             			done();
           			});
         		});
-		    });*/
+		    });
  		});
 
 	}
