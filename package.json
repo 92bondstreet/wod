@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Yassine AZZOUT <92bondstreet@gmail.com>",
   "homepage": "https://github.com/92bondstreet/wod",
-  "description": "Generate a random CrossFit Workout Of the Day",  
+  "description": "Generate a random CrossFit Workout Of the Day",
   "main": "lib/main.js",
   "repository": {
     "type": "git",
@@ -24,11 +24,16 @@
     "cheerio": "*"
   },
   "devDependencies": {
-   	"mocha": "*",
-   	"should": "*"
+    "mocha": "*",
+    "should": "*"
   },
   "scripts": {
     "test": "mocha test/*.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "gitHead": "23ee03708a02032c8ad547a06a839f2cf50818f4",
+  "bugs": {
+    "url": "https://github.com/92bondstreet/wod/issues"
+  }
 }
