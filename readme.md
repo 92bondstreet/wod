@@ -23,20 +23,24 @@ You can install `wod` and its dependencies with npm:
 
 `npm install wod`.
 
-pu
+
 Usage
 -----
 	var wod = require('wod');	
 
 	// Generate a random WOD from all workouts
-	var workout = wod.getone(function(err){
+	wod.getone(function(err,workouts){
 		if (err) console.log(err);
+		var random_wod = workouts[0];
+		console.log(random_wod);
 	});
 	
 	// Generate a list of random WODs from input categories
 	var wodsCat = [weighlifting,bodyweight,emotm];
-	var wods = wod.random(recipient,function(err){
+	wod.random(function(err,workouts){
 		if (err) console.log(err);
+		for(var i=0;i<workouts.length;i++)
+			console.log(workouts[i]);
 	});
 
 Methods
@@ -48,7 +52,7 @@ Methods
 With 
 
 * `categories`, optional, array containing list of WODs categories
-* `callback` with error return or succes message.
+* `callback` with error return and WODs results.
 
  
 Callback receives `(error, response)`.
