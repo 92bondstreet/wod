@@ -36,7 +36,7 @@ Usage
 	});
 	
 	// Generate a list of random WODs from input categories
-	var wodsCat = [weighlifting,bodyweight,emotm];
+	var wodsCat = ['weightlifting','bodyweight','emotm'];
 	wod.random(function(err,workouts){
 		if (err) console.log(err);
 		for(var i=0;i<workouts.length;i++)
