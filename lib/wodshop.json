@@ -1,0 +1,21 @@
+{
+	"weightlifting":
+	{
+		"title":"Weightlifting",
+		"tagline":"Powerlifting and Olympic weightlifting workouts",
+		"post":{
+			"wodType":"weight",
+			"submit":"Weightlifting"
+		}
+	},
+	"endurance":
+	{
+		"title":"Endurance",
+		"tagline":"Swimming, biking, running, and indoor rowing workouts",
+		"post":{
+			"wodType":"metcon",
+			"submit":"Endurance"
+		}
+	}
+
+}
