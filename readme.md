@@ -3,6 +3,8 @@ WOD
 
 wod is a node.js module to generate a CrossFit Workout Of the Day (WOD)
 
+[![Build Status](https://travis-ci.org/92bondstreet/wod.png)](https://travis-ci.org/92bondstreet/wod)
+
 Keynote
 -------
 
