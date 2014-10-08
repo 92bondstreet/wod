@@ -18,14 +18,14 @@
   ],
   "analyze": false,
   "dependencies": {
-    "needle": "*",
-    "async": "*",
-    "random-ua": "*",
-    "cheerio": "*"
+    "needle": "~0.7.10",
+    "async": "~0.9.0",
+    "random-ua": "0.0.6",
+    "cheerio": "~0.17.0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "mocha": "~1.21.4",
+    "should": "~4.0.4"
   },
   "scripts": {
     "test": "mocha test/*.js"
