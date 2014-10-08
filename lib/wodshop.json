@@ -4,7 +4,7 @@
 		"title":"Weightlifting",
 		"tagline":"Powerlifting and Olympic weightlifting workouts",
 		"post":{
-			"wodType":"weight",
+			"type":"weight",
 			"submit":"Weightlifting"
 		}
 	},
@@ -13,7 +13,7 @@
 		"title":"Endurance",
 		"tagline":"Swimming, biking, running, and indoor rowing workouts",
 		"post":{
-			"wodType":"metcon",
+			"type":"metcon",
 			"submit":"Endurance"
 		}
 	},
@@ -22,7 +22,7 @@
 		"title":"Bodyweight",
 		"tagline":"Bodyweight only workouts (some may require pull-up bar, jump rope, rings, and/or plyo box)",
 		"post":{
-			"wodType":"bodywt",
+			"type":"bodywt",
 			"submit":"Bodyweight"
 		}
 	},
@@ -31,7 +31,7 @@
 		"title":"Kettlebells",
 		"tagline":"Workouts involving one or more kettlebell exercises",
 		"post":{
-			"wodType":"kb",
+			"type":"kb",
 			"submit":"Kettlebells"
 		}
 	},
@@ -40,7 +40,7 @@
 		"title":"Singlets",
 		"tagline":"Single element workouts - weightlifting (W), endurance (M), or bodyweight (B)",
 		"post":{
-			"wodType":"singlet",
+			"type":"singlet",
 			"submit":"Singlets"
 		}
 	},
@@ -49,7 +49,7 @@
 		"title":"Couplets",
 		"tagline":"Two element workouts - WM, BM, WW, WB, etc...",
 		"post":{
-			"wodType":"couplet",
+			"type":"couplet",
 			"submit":"Couplets"
 		}
 	},
@@ -58,7 +58,7 @@
 		"title":"Triplets",
 		"tagline":"Three element workouts - BWM, WBM, WWB, BBB, etc...",
 		"post":{
-			"wodType":"triplet",
+			"type":"triplet",
 			"submit":"Triplets"
 		}
 	},
@@ -67,7 +67,7 @@
 		"title":"Hybrids",
 		"tagline":"Mixed-modal workouts, four or more exercises performed for multiple rounds",
 		"post":{
-			"wodType":"hybrid",
+			"type":"hybrid",
 			"submit":"Hybrids"
 		}
 	},
@@ -76,7 +76,7 @@
 		"title":"Chippers",
 		"tagline":"Multiple exercises in single round format",
 		"post":{
-			"wodType":"chipper",
+			"type":"chipper",
 			"submit":"Chippers"
 		}
 	},
@@ -85,7 +85,7 @@
 		"title":"C2",
 		"tagline":"Indoor rowing workouts",
 		"post":{
-			"wodType":"c2",
+			"type":"c2",
 			"submit":"C2"
 		}
 	},
@@ -94,7 +94,7 @@
 		"title":"AMRAP",
 		"tagline":"Work priority WODs - As Many Rounds As Possible",
 		"post":{
-			"wodType":"amrap",
+			"type":"amrap",
 			"submit":"AMRAP"
 		}
 	},
@@ -103,7 +103,7 @@
 		"title":"Hero",
 		"tagline":"Main site WODs named in honor of fallen Mil/LEO",
 		"post":{
-			"wodType":"hero",
+			"type":"hero",
 			"submit":"Hero"
 		}
 	},
@@ -112,7 +112,7 @@
 		"title":"Girls",
 		"tagline":"CFHQ's original named benchmark WODs",
 		"post":{
-			"wodType":"girls",
+			"type":"girls",
 			"submit":"Girls"
 		}
 	},
@@ -121,7 +121,7 @@
 		"title":"Strength Bias",
 		"tagline":"Short duration heavy metcons consistent with CFSB programming",
 		"post":{
-			"wodType":"cfsb",
+			"type":"cfsb",
 			"submit":"Strength Bias"
 		}
 	},
@@ -130,7 +130,7 @@
 		"title":"EMOTM",
 		"tagline":"Every Minute On The Minute WODs (including Death By WOD)",
 		"post":{
-			"wodType":"emom",
+			"type":"emom",
 			"submit":"EMOTM"
 		}
 	},
@@ -139,7 +139,7 @@
 		"title":"Strongman",
 		"tagline":"Workouts involving a variety of Strongman implements and movements. Scale accordingly!",
 		"post":{
-			"wodType":"strongman",
+			"type":"strongman",
 			"submit":"Strongman"
 		}
 	},
@@ -148,7 +148,7 @@
 		"title":"The Hopper",
 		"tagline":"All workouts",
 		"post":{
-			"wodType":"modal",
+			"type":"modal",
 			"submit":"The Hopper"
 		}
 	}
